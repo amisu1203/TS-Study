@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    // 가장 최신의 자바스크립트 버전으로 컴파일
+    "target": "ESNext",
+    "module": "ESNext",
+    // 생성될 js 파일의 위치 지정
+    "outDir": "dist",
+    // 타입 검사를 엄격하게 할지
+    "strict": true,
+    // 모듈 독립성 -> 모듈 키워드 자동으로 추가됨
+    "moduleDetection": "force"
+  },
+  // ts-node가 esmodule로 설정
+  "ts-node": {
+    "esm": true
+  },
+  // src 디렉토리 하위의 모든 파일을 다 컴파일
+  "include": ["src"]
+}
